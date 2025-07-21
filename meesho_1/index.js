@@ -52,7 +52,7 @@ inputformEl.addEventListener("submit", (e) => {
   e.preventDefault();
 
   // Push current input value
-  recentinput.push(inputsearch.value);
+  recentinput.unshift(inputsearch.value);
 
   // Reset HTML string
   let listofrecenHTMLEl = "";

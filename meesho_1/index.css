@@ -269,9 +269,10 @@ form {
    .features {
   display: flex;
   justify-content: center; 
-  background-color: #fff;
-  border: 1px solid var(--hoverTextcolor);
+  /* background-color: #fff; */
+  border:1px solid rgba(220, 148, 208, 0.5);
   /* padding: 10px; */
+   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   width: 97%;
@@ -283,6 +284,13 @@ form {
 }
 
 /* feature section */
+.feature-content{
+  /* width: 100%; */
+  background-color: rgb(253, 238, 250);
+  /* border: 1px solid; */
+  padding: 10px;
+   scrollbar-width: none; 
+}
 
 .feature-item {
   display: inline-flex;
@@ -291,7 +299,7 @@ form {
   /* margin-top: 10px; */
   padding: 10px 15px;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   vertical-align: middle;
 }
 
@@ -322,23 +330,11 @@ form {
   /* max-width: 100%; */
   /* margin: auto; */
   margin-top: 20px;
-  scrollbar-width: thin; /* Firefox support */
-  /* scrollbar-color: #ccc transparent; */
+  
 }
-
-/* Chrome-style scrollbar */
-/* .catagory-section::-webkit-scrollbar {
-  height: 6px;
-} */
-
-/* .catagory-section::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 4px;
-} */
-
-/* .catagory-section::-webkit-scrollbar-track {
-  background: transparent;
-} */
+ .catagory-section::-webkit-scrollbar {
+      display: none; 
+ }
 
 .category {
   display: flex;
@@ -371,21 +367,22 @@ form {
 
      /* golde-section */
 .golde-section{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 550px;
   background-image: url("https://images.meesho.com/images/marketing/1744698265981.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .gold-img{
-  border: 3px solid;
+  /* border: 3px solid; */
   width: 22%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 45px;
-  margin: auto;
+  /* margin: auto; */
   margin-left: 65%;
   margin-top: 5%;
+  padding-top: 50px;
 }
 .gold-img>img{
   width: 100%;
@@ -403,13 +400,14 @@ form {
 }
 .original-brands{
   border: 3px solid red;
+  margin-top: 10px;
 }
 .original-text{
   display: flex;
   color:rgb(83, 83, 83);
   font-size: 25px;
   margin-left: 100px;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 #br{
   font-family: Verdana;
@@ -436,3 +434,121 @@ form {
   font-size: 18px;
   color: var(--hoverTextcolor);
 }
+/* original-grand-img-porsion */
+.original-grand-img-porsion{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+.original-grand-img-porsion::-webkit-scrollbar {
+      display: none; 
+ }
+ .original-img{
+  height: 100px;
+ }
+.original-grand-img-porsion>#prev{
+width: 10px;
+color: #333;
+}
+
+
+/* brand-section */
+
+.popular-brands-section {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #c5bfbf;
+}
+
+.brands {
+  display: flex;
+  animation: scrollBrands 5s linear infinite; 
+}
+
+.brands > div {
+  /* border: 1px solid rgb(0, 255, 213); */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  /* flex: 0 0 auto; */
+  margin-right: 20px; 
+  background-color: rgb(252, 251, 255);
+  border-radius: 5px;
+}
+.brands> div>img{
+  height: 80px;
+  width: 150px;
+  margin: auto;
+  
+}
+@keyframes scrollBrands {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+
+/* Trend-section */
+
+.trend-section{
+  border: 1px solid green;
+  height: 400px;
+   background-image: url("https://images.meesho.com/images/marketing/1744698143534.webp");
+   background-repeat: no-repeat;
+   background-size: cover;
+  /* display: flex; */
+  
+}
+.trend-section-portion{
+  width: 60%;
+  height: 220px;
+  /* border: 1px solid orangered; */
+  display: flex;
+  margin: auto;
+  margin-left: 500px;
+  margin-top: 50px;
+  
+}
+.trend-section-portion>div{
+  width: 17%;
+  margin: auto;
+}
+.trend-section-portion>div>img{
+  height: 170px;
+}
+.trend-section-portion-text{
+  /* border: 2px solid green; */
+  width: 60%;
+  display: flex;
+  margin-left: 500px;
+  margin-top: 10px;
+  text-align: center;
+  padding-left: 5px;
+}
+.trend-section-portion-text>div{
+  width: 20%;
+  margin: auto;
+  border: 1px solid rgb(255, 157, 0);
+  background-color: rgb(255, 245, 229);
+  color: rgb(88, 10, 70);
+  border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 15px;
+}
+
+  
+
+ .trend-section-button{
+      font-size: 25px;
+      padding: 10px 25px;
+      background-color: white;
+      color: var(--hoverTextcolor);
+      border: none;
+      border-radius: 5px;
+      margin-left: 50px;
+      margin-bottom: 100px;
+
+    }

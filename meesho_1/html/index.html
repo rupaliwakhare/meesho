@@ -5,20 +5,20 @@
     <title>Online Shopping for Fasion, Electronics, Home & More</title>
     <!-- fevicon icon -->
      <link rel="icon" href="https://startupstorymedia.com/wp-content/uploads/2023/06/meesho.png">
-     <!-- google icon -->
+     google icon
      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
      <!-- font awsome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
       
 
-     <link rel="stylesheet" href="./index.css">
+     <link rel="stylesheet" href="../style/index.css">
 </head>
 <body>
     <header class="header">
         <div class="headerleft">
             <div class="logocontainer">
-            <img src="./logo.svg" alt="image">
+            <img src="../image/logo.svg" alt="image">
         </div>
         <!-- search-box -->
          <div class="searchinputcontainer">
@@ -67,7 +67,23 @@
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <p>Profile</p>
+                    
                 </div>
+                 <div class="logindropdown">
+                     <div class="logindropbox">
+                            <h3>Hello User</h3>
+                            <p>To access your Messho account</p>
+                            <button class="logindropbtn"><a href="../html/signup.html">Sign Up</a></button>
+                        <div class="loginlinks">
+                            <hr>
+                             <a href="#">My Orders</a>
+                            <!-- <br> -->
+                            <hr>
+                            <a href="#">Delete Account</a>
+                        </div>
+                     </div>
+                 </div>
+
 
                 <div class="cartcontainer">
                     <div class="carticon">
@@ -201,10 +217,10 @@
   <div class="original-brands">
     <div class="original-text">
         <h2 id="br">Original Brands</h2>
-        <img id="originaal-right" src="./original-brand.png" alt="image">
+        <img id="originaal-right" src="../image/original-brand.png" alt="image">
         <div class="original-view">
           VIWE ALL
-          <button id="next">❯</button>
+          <button id="btn-next">❯</button>
         </div>
     </div>
    <div class="original-grand-img-porsion">
@@ -338,7 +354,16 @@
      </div>
 
      <div class="container">
-        <div id="-container-form"></div>
+        <h1>Products for you</h1>
+      <div>
+        <select id="">
+            <option value="">Sort by: <span>Relevance<span></option>
+                <option value=""></option>
+        </select>
+       </div> 
+        
+
+
         <div id="store"></div>
      </div>
 </body>

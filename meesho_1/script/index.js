@@ -76,3 +76,17 @@ inputformEl.addEventListener("submit", (e) => {
   inputsearch.value = "";
   document.getElementById("closesearch").style.display = "none";
 });
+
+
+
+let container = document.querySelector(".original-grand-img-porsion");
+let nextBtn = document.getElementById("next");
+let prevBtn = document.getElementById("prev");
+
+nextBtn.addEventListener("click", () => {
+  container.scrollLeft += 220;
+});
+
+prevBtn.addEventListener("click", () => {
+  container.scrollLeft -= 220;
+});

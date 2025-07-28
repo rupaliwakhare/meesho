@@ -110,10 +110,12 @@ form {
   margin: 5px;
 } */
 .downloadcontainer {
-  display: flex;/
+  display: flex;
   height: 100%;
+  
   /* margin-right: 10px; */
   align-items: center;
+ 
   
 }
 .downloadcontainer:hover{

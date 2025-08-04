@@ -184,9 +184,14 @@ form {
 
 .logindropbox h3 {
   margin: 0;
+  /* margin-left: 10px; */
   color: black;
   font-size: 20px;
   font-weight: 600;
+}
+.logindropbox h3 i{
+  margin-right: 30px;
+  color:rgb(94, 89, 89);
 }
 
 .logindropbox p {
@@ -213,13 +218,22 @@ form {
   text-decoration: none;
   color: white;
 }
+
 .loginlinks a {
   display: block;
   font-size: 20px;
-  color:black;
+  color:rgb(37, 37, 37);
   text-decoration: none;
   margin-bottom: 6px;
   padding: 9px;
+}
+.loginlinks a>span{
+margin-right: 10px;
+font-weight: bold;
+}
+.loginlinks a>span i{
+  color: #6b6a6a;
+
 }
 .loginlinks a:hover {
   text-decoration: underline;

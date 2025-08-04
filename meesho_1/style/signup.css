@@ -121,6 +121,11 @@ form {
 .downloadcontainer:hover{
     color: var(--hoverTextcolor);
 }
+.downloadcontainer >a{
+  text-decoration: none;
+  color: #333;
+  font-size: 17px;
+}
 .downloadcontainer > p {
   margin: 0;
   padding: 0;
@@ -134,6 +139,11 @@ form {
   margin-right: 1px;
   border-left: 2px solid #ccc;
   /* border-right: 2px solid #ccc; */
+}
+.becomesupliercontainer >a{
+  text-decoration: none;
+  color: #333;
+  font-size: 17px;
 }
 .becomesupliercontainer p{
   font-weight: 500px;

@@ -459,3 +459,94 @@ nav a:hover {
 .feedbackcontainer{
   border: 2px solid;
 }
+
+
+/* reward section */
+
+
+.main-box {
+  margin: auto;
+  font-family: sans-serif;
+  /* margin: 50px auto; */
+  background-color: #e6f7ff;
+  border-radius: 12px;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.1);/ */
+  /* padding: 50px 30px; */
+  display: flex;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+.title-box{
+  width: 330px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.title-box h1 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.reward-row {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+  margin-left: 120px;
+  /* flex-wrap: wrap; */
+}
+
+
+.reward-one{
+  background-color: white;
+  padding:  40px;
+  border-radius: 10px;
+  width: 230px;
+  /* width: calc(33.333% - 13.33px); */
+  height: 230px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  text-align: left;
+}
+.reward-one>h2{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.reward-one>p{
+  /* margin-bottom: 10px; */
+  font-size: 10px;
+  text-align: justify;
+}
+.reward-one>img{
+  margin-bottom: 20px;
+}
+.reward-two{
+  width: 200px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 35px;
+  border-radius: 10px;
+ height: 200px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  text-align: left;
+}
+.reward-two>h2{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.reward-two>p{
+  /* margin-bottom: 10px; */
+  font-size: 10px;
+}
+.reward-two>img{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+

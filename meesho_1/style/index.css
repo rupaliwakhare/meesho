@@ -36,7 +36,7 @@ img {
 .searchinputcontainer {
   width: 450px;
   height: 45px;
-  outline: 1px solid rgb(139, 137, 137);
+  outline: 1px solid rgb(218, 215, 215);
   /* border:1px solid #333; */
   display: flex;
   align-items: center;
@@ -688,4 +688,7 @@ font-weight: bold;
       margin-left: 50px;
       margin-bottom: 100px;
       
+    }
+    .product-container{
+      border: 2px solid red;
     }

@@ -230,12 +230,12 @@ header {
   width: 520px;
   height: 350px;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 
 }
 
@@ -294,3 +294,163 @@ header {
   text-align: justify;
   margin-top: 70px;
 }
+/* third-video-section */
+.container-third {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: 40px;
+  /* padding-top: 20px; */
+}
+
+.card-third {
+  position: relative;
+  width: 520px;
+  height: 300px;
+  background-size: cover;
+  /* background-position: center; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding-top: 50px;
+
+
+}
+
+.overlay-third {
+  position: absolute;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.6); */
+  color: white;
+  width: 100%;
+  padding: 15px;
+  font-size: 26px;
+}
+
+.play-button-third{
+  position: absolute;
+  top: 60%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  /* background-color: white; */
+  color: white;
+  border: 2px solid;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 10px 14px;
+  box-shadow: 0 2px 6px rgba(207, 205, 205, 0.3);
+}
+/* content-commerce-section */
+.content-commerce-section{
+  width: 90%;
+  background-color: #f7f7f7;
+  display: flex;
+  gap: 40px;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+#content-commerce-section-image{
+  width: 30%;
+  margin-left: 70px;
+}
+#content-commerce-section-image> img {
+  width: 100%;
+  margin-top: 10px;
+  /* height: 250px; */
+}
+#content-commerce-section-text {
+  width: 55%;
+}
+#content-commerce-section-text>h1{
+  width: 90%;
+  font-size: 34px;
+}
+#content-commerce-section-text>p {
+  width: 90%;
+  text-align: justify;
+  margin-top: 50px;
+}
+/* fourthvideosection */
+.container-fourth {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: 40px;
+  /* padding-top: 20px; */
+}
+
+.card-fourth {
+  position: relative;
+  width: 520px;
+  height: 300px;
+  background-size: cover;
+  /* background-position: center; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding-top: 50px;
+
+
+}
+
+.overlay-fourth {
+  position: absolute;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.6); */
+  color: white;
+  width: 100%;
+  padding: 15px;
+  font-size: 26px;
+}
+
+.play-button-fourth{
+  position: absolute;
+  top: 60%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  /* background-color: white; */
+  color: white;
+  border: 2px solid;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 10px 14px;
+  box-shadow: 0 2px 6px rgba(207, 205, 205, 0.3);
+}
+/* footer */
+ .meesho-footer {
+      background-color: #f3f4f6;
+      padding: 30px 20px;
+      text-align: center;
+      border-top: 1px solid #ddd;
+    }
+
+    .meesho-footer .footer-logo img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+
+    .meesho-footer .copyright {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .meesho-footer .social-links a img,
+    .meesho-footer .app-download a img {
+      width: 32px;
+      margin: 0 10px;
+      vertical-align: middle;
+      transition: transform 0.3s ease;
+    }
+
+    .meesho-footer .social-links a img:hover,
+    .meesho-footer .app-download a img:hover {
+      transform: scale(1.1);
+    }

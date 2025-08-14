@@ -127,9 +127,7 @@ header {
 #eccomerce-affortable-section-text {
   width: 55%;
 }
-#eccomerce-affortable-section-text > h1 {
-  /* margin-top: 10px; */
-}
+
 #eccomerce-affortable-section-text > p {
   width: 90%;
   text-align: justify;

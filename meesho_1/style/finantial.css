@@ -136,3 +136,75 @@ height: 250px;
   margin-top: 20px;
   font-family: sans-serif;
 }
+/* footer */
+.meesho-footer {
+  background-color: black;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  margin-top: 150px;
+}
+
+#fotooer-first-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-logo .copyright {
+  width: 79%;
+  font-size: 15px;
+  margin-left: 20px;
+  color: white;
+}
+
+.fotooer-second-section a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 8px;
+  margin-left: 30px;
+}
+
+.fotooer-second-section a:hover {
+  color: #ff3f6c;
+}
+
+.fotooer-third-section,
+.playstoresection {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.fotooer-third-section img {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.playstoresection img {
+  width: 100px;
+  height: 30px;
+  margin-top: 25px;
+  /* border-radius: px; */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.fotooer-third-section img:hover,
+.playstoresection img:hover {
+  transform: scale(1.1);
+}

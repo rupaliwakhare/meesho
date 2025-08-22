@@ -58,4 +58,44 @@ prevBtn.addEventListener("click", () => {
 });
 
 
+// signup
 
+  window.onload = function () {
+    const mobile = localStorage.getItem("userMobile"); // ✅ Get plain string
+
+    if (mobile) {
+      const profileText = document.querySelector(".logindropbox p");
+      profileText.textContent = `📱 ${mobile}`;
+      profileText.style.fontWeight = "bold";
+      profileText.style.color = "#333";
+      profileText.style.display = "block";
+    }
+  };
+
+
+  // Delet
+  function deleteAccount() {
+    // LocalStorage se mobile number hatao
+    localStorage.removeItem("userMobile");
+
+    // Alert dikhao
+    alert("Account deleted!");
+
+    // Page reload karo
+    location.reload();
+  }
+
+  // cart
+  // Initial cart count
+function updateCartCount() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let total = cart.reduce((sum, item) => sum + item.quantity, 0);
+  document.getElementById("cart-count").textContent = total;
+}
+
+// window.onload = function () {
+//   updateCartCount(); // ✅ Refresh ke baad bhi count dikhega
+// };
+document.addEventListener("DOMContentLoaded", function () {
+  updateCartCount(); // ✅ DOM ready hote hi count update
+});

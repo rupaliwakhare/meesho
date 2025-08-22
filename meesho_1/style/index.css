@@ -242,12 +242,18 @@ font-weight: bold;
 .loginlinks a:hover {
   text-decoration: underline;
 }
+.profileicon i{
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 13px;
 
-.profileicon i,
+}
+/* .profileicon i, */
 .carticon i {
   font-size: 24px;
   margin-bottom: 5px;
 }
+
 
 .profilecontainer p {
   margin: 0;

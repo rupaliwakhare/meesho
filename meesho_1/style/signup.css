@@ -359,3 +359,22 @@ button[type="submit"]:hover {
 #terms span:nth-child(4):hover {
     text-decoration: underline;
 }
+#otpbox input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#verifybtn {
+  background-color: #f43397;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}

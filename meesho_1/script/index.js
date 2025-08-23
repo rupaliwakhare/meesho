@@ -86,6 +86,17 @@ prevBtn.addEventListener("click", () => {
   }
 
   // cart
+function goToCart() {
+  const mobile = localStorage.getItem("userMobile");
+
+  if (mobile) {
+    window.location.href = "cart.html"; // ✅ User is signed up
+  } else {
+    alert("Please sign up to access your cart.");
+    window.location.href = "signup.html"; // 🚪 Redirect to signup
+  }
+}
+
   // Initial cart count
 function updateCartCount() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];

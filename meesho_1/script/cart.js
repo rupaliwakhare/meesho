@@ -218,9 +218,9 @@
       <p>${item.description}</p>
       <p>₹${Math.floor(item.price)} x ${quantity} = ₹${itemTotal}</p>
       <div class="cart-buttons">
-        <button onclick="changeQty(${index}, -1)">➖</button>
-        <button onclick="changeQty(${index}, 1)">➕</button>
-        <button onclick="removeItem(${index})">🗑️</button>
+        <button onclick="changeQty(${index}, -1)">-</button>
+        <button onclick="changeQty(${index}, 1)">+</button>
+        <button onclick="removeItem(${index})">Remove</button>
       </div>
     </div>
   </div>

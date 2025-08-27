@@ -100,7 +100,7 @@ function goToCart() {
   // Initial cart count
 function updateCartCount() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  let total = cart.reduce((sum, item) => sum + item.quantity, 0);
+  let total = cart.length;
   document.getElementById("cart-count").textContent = total;
 }
 

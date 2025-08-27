@@ -239,6 +239,7 @@
       cart[index].quantity += delta;
       if (cart[index].quantity < 1) {
         cart.splice(index, 1);
+        updateCartCount();
       }
       localStorage.setItem("cart", JSON.stringify(cart));
       renderCart();
@@ -256,3 +257,13 @@
     }
 
     renderCart(); // ✅ Show cart on page load
+
+    document.getElementById("checkout-btn").addEventListener("click", () => {
+      if (cart.length === 0) {
+        alert("Your cart is empty 🛒");
+        return;
+      }
+
+      localStorage.setItem("checkoutCart", JSON.stringify(cart));
+      window.location.href = "address.html"; // ✅ Redirect to address page
+    });

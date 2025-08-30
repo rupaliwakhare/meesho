@@ -363,6 +363,10 @@ font-weight: bold;
       border: none;
       border-radius: 5px;
     }
+    .smartshop-button>a{
+      text-decoration: none;
+      color: purple;
+    }
     
    .features {
   display: flex;
@@ -519,7 +523,7 @@ font-weight: bold;
 
 
 .original-brands{
-  border: 3px solid red;
+  /* border: 3px solid red; */
   margin-top: 10px;
 }
 .original-text{
@@ -548,51 +552,69 @@ font-weight: bold;
   font-size: 18px;
   font-style: normal;
 }
-#btn-next{
-  border: none;
-  background-color: white;
-  font-size: 18px;
-  color: var(--hoverTextcolor);
-}
-/* original-grand-img-porsion */
 
- .original-grand-img-porsion {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+/* Container for the entire slider */
+/* Slider container — full width */
+.original-grand-img-porsion {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.original-grand-img-porsion .original-img {
-  min-width: 200px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.original-grand-img-porsion img {
+  gap: 16px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-x: auto;
   width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
+  scroll-snap-type: x mandatory;
 }
 
-#prev, #next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #ffffff;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
+/* Individual image card */
+.original-img {
+  flex: 0 0 auto;
+  width: 220px;
+  background-color: #fff;
+  border-radius: 12px;
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.1); */
+  text-align: center;
   padding: 10px;
-  z-index: 1;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  /* transition: transform 0.3s ease; */
+  scroll-snap-align: start;
+  display: none; /* JS controls visibility */
 }
 
-#prev { left: 0; }
-#next { right: 0; }
+.original-img:hover {
+  /* transform: scale(1.05); */
+}
 
+/* Image inside card */
+.original-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
+/* Navigation buttons */
+#prev,
+#next {
+  background-color: white;
+  color: rgb(56, 54, 54);
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* #prev:hover,
+#next:hover {
+  background-color: #4b1fa8;
+} */
+
+/* Optional: Hide scrollbar for cleaner look */
+.original-grand-img-porsion::-webkit-scrollbar {
+  display: none;
+}
 
 /* brand-section */
 
@@ -704,6 +726,4 @@ font-weight: bold;
       font-size: 40px;
       color: #474646;
     }
-    .product-container{
-      /* border: 2px solid red; */
-    }
+    /* / */

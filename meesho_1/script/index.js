@@ -110,3 +110,46 @@ function updateCartCount() {
 document.addEventListener("DOMContentLoaded", function () {
   updateCartCount(); // ✅ DOM ready hote hi count update
 });
+
+// Original brand section
+
+const brandSliderSection = document.querySelector(
+  ".original-grand-img-porsion"
+);
+const brandImages = brandSliderSection.querySelectorAll(".original-img");
+const btnPrevious = document.getElementById("prev");
+const btnNext = document.getElementById("next");
+
+let startIndex = 0;
+const maxVisibleImages = 5;
+
+function renderVisibleImages() {
+  brandImages.forEach((imageBox, index) => {
+    imageBox.style.display =
+      index >= startIndex && index < startIndex + maxVisibleImages
+        ? "block"
+        : "none";
+  });
+
+  // Toggle button visibility
+  btnPrevious.style.visibility = startIndex === 0 ? "hidden" : "visible";
+  btnNext.style.visibility =
+    startIndex + maxVisibleImages >= brandImages.length ? "hidden" : "visible";
+}
+
+btnPrevious.addEventListener("click", () => {
+  if (startIndex > 0) {
+    startIndex--;
+    renderVisibleImages();
+  }
+});
+
+btnNext.addEventListener("click", () => {
+  if (startIndex + maxVisibleImages < brandImages.length) {
+    startIndex++;
+    renderVisibleImages();
+  }
+});
+
+// Initial load
+renderVisibleImages();

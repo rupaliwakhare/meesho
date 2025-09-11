@@ -127,4 +127,4 @@
     }
 
     fetchProducts();
-    updateCartCount(); // ✅ Show count on page load
+    updateCartCount(); 

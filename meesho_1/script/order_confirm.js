@@ -13,6 +13,6 @@ document.getElementById("deliveryDate").textContent =
 // Redirect function
 
   function goHome() {
-    window.location.href = "index.html"; // Redirects to product page
+    window.location.href = "index.html"; 
   }
 
